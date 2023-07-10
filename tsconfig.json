@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"noEmit": true,
+		"types": ["jquery"],
+		"lib": ["ESNext", "DOM"],
+		"module": "ESNext",
+		"target": "ESNext",
+		"allowJs": true,
+		"checkJs": true,
+		"esModuleInterop": true,
+		"moduleResolution": "bundler",
+		"moduleDetection": "force",
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true
+	},
+	"include": ["src", "scripts"],
+	"exclude": ["build", "node_modules"]
+}
