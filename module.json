@@ -10,7 +10,7 @@
 			"url": "https://github.com/aMediocreDad"
 		}
 	],
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"compatibility": {
 		"minimum": "11",
 		"verified": "11"
@@ -20,5 +20,5 @@
 	"socket": true,
 	"url": "https://github.com/aMediocreDad/coins/",
 	"manifest": "https://github.com/aMediocreDad/coins/releases/latest/download/module.json",
-	"download": "https://github.com/aMediocreDad/coins/releases/download/v1.0.0/module.zip"
+	"download": "https://github.com/aMediocreDad/coins/releases/download/v1.0.1/module.zip"
 }
