@@ -33,7 +33,7 @@ Hooks.on("wfrp4e:rollTest", (data) => {
 	if (fortuneUsed.SL || fortuneUsed.reroll) {
 		coins.update((coins) => Math.min(coins + 1));
 		emit({ coins: get(coins) });
-	} else if (context.reroll && !actor.hasPlayerOwner) {
+	} else if (context.reroll && game.user.isGM && !actor.hasPlayerOwner) {
 		coins.update((coins) => Math.max(0, coins - 1));
 		emit({ coins: get(coins) });
 	}

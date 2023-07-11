@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { type Writable } from "svelte/store";
-	import { range } from "./helpers";
+	import { emit, range } from "./helpers.js";
 
 	export let coins: Writable<number>;
 
@@ -39,11 +39,11 @@
 	disabled={!game.user.isGM}
 	on:click={() => {
 		coins.update((n) => n + 1);
-		game.socket.emit("module.coins", { coins: $coins });
+		emit({ coins: $coins });
 	}}
 	on:contextmenu={() => {
 		coins.update((n) => Math.max(0, n - 1));
-		game.socket.emit("module.coins", { coins: $coins });
+		emit({ coins: $coins });
 	}}
 >
 	{#each range(1, $coins) as num}
